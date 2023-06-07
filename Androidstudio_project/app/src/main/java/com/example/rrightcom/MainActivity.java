@@ -109,8 +109,7 @@ public class MainActivity extends AppCompatActivity
     private Location location;
 
 
-    private View mLayout;  // Snackbar 사용하기 위해서는 View가 필요합니다.
-    // (참고로 Toast에서는 Context가 필요했습니다.)
+    private View mLayout;  // Snackbar 사용하기 위해서는 View가 필요 Toast에서는 Context가 필요
     @Override
     public void onPlacesFailure(PlacesException e) {
 
@@ -173,7 +172,7 @@ public class MainActivity extends AppCompatActivity
                                         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
                                     markerOptions.snippet("연동 " + user.com+"위도"+placeLat + "경도" + placeLong);
 
-                                    Log.d(TAG, "위도" + placeLat + "경도" + placeLong + "왜안나와요");
+                                   
                                     Marker item = mMap.addMarker(markerOptions);
                                      tMapPointEnd=new TMapPoint(placeLat,placeLong);
                                     previous_marker.add(item);
@@ -263,9 +262,6 @@ public class MainActivity extends AppCompatActivity
                     tMapPolyLine=new TMapData().findPathData(tMapPointStart,tMapPointEnd);
                     tMapPolyLine.setLineColor(Color.BLUE);
                     tMapPolyLine.setLineWidth(2);
-
-
-                 //   Log.w("tmapView실행","    location.getLat"+location.getLatitude()+"    location.getLong"+location.getLongitude()+"       tmapPointend"+tMapPointEnd+"     tmapPointstart"+tMapPointStart);
 
                 }
                 catch(Exception e){
