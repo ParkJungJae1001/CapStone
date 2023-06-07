@@ -160,6 +160,44 @@ public class MainActivity extends AppCompatActivity
                                final float dataLat=Float.parseFloat(user.lat);
                                 if(dataLat==placeLat) {
                                  
+                                        
+   /*                     마커가 아닌 아이콘으로 표현하면 어떨까
+
+
+
+
+                                    int hei=70;
+                                    int widt=70;
+
+                                    int mo_hei=50;
+                                    int mo_widt=100;
+
+                                    BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.tmap);
+                                    Bitmap b=bitmapdraw.getBitmap();Bitmap tmapMarker = Bitmap.createScaledBitmap(b, widt, hei, false);
+                                    BitmapDrawable bitmapdraw1=(BitmapDrawable)getResources().getDrawable(R.drawable.kakao);
+                                    Bitmap c=bitmapdraw1.getBitmap();Bitmap kakaoMarker = Bitmap.createScaledBitmap(c, widt, hei, false);
+                                    BitmapDrawable bitmapdraw2=(BitmapDrawable)getResources().getDrawable(R.drawable.modu);
+                                    Bitmap d=bitmapdraw2.getBitmap();Bitmap moduMarker = Bitmap.createScaledBitmap(d, mo_widt, mo_hei, false);
+                                    BitmapDrawable bitmapdraw3=(BitmapDrawable)getResources().getDrawable(R.drawable.higr);
+                                    Bitmap e=bitmapdraw3.getBitmap();Bitmap higrMarker = Bitmap.createScaledBitmap(e, widt, hei, false);
+
+                                    //markerOptions.snippet(markerSnippet);
+
+                                    if(user.com.equals("Kakao")){
+                                    markerOptions.icon(BitmapDescriptorFactory.fromBitmap(kakaoMarker));}
+                                    else if(user.com.equals("Tmap")){
+                                        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(tmapMarker));}
+                                    else if(user.com.equals("AJ")){
+                                        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(higrMarker));}
+                                    else if(user.com.equals("modu")){
+                                        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(moduMarker));}
+                                    else
+                                        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+                                        
+    */
+
+
+
                                     if(user.com.equals("Kakao")){
                                         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));}
                                     else if(user.com.equals("Tmap")){
