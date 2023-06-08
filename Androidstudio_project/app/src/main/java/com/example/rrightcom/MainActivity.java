@@ -1,3 +1,9 @@
+/*
+                Android studio에서 java로 작성했습니다.
+                구글맵에서 받아오는 api를 이용해 집근처 주차장을 탐색하고 서버에 저장해놓은 정보로 비교후 마커로 알려주는 방식으로 진행하였습니다.
+*/
+
+
 package com.example.rrightcom;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
